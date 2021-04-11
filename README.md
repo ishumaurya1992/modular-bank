@@ -16,11 +16,8 @@ What things you need to install the software and how to install them
 * Postgres 13.2
 * Maven 3.5
 * RabbitMQ 3.8
-
-
 ```
-SQL Script :
-
+## SQL Script :
 ```
 CREATE SEQUENCE id_sequence
   start 1000
@@ -37,7 +34,6 @@ CREATE TABLE account (
    constraint balance check (balance >= 0)
 );
 
-
 CREATE TABLE transaction (
    id integer primary key  default  nextval('id_sequence'::regclass),
    accountNumber VARCHAR ( 12 ) NOT NULL,
@@ -52,7 +48,6 @@ CREATE TABLE transaction (
 );
 ALTER TABLE transaction ADD FOREIGN KEY (accountNumber)
 REFERENCES account(accountNumber) ON DELETE CASCADE;
-
 ```
 
 Ports:
@@ -61,9 +56,7 @@ tomcat : 8080
 RabbitMQ : 5672
 
 ```
-
-Important links:
-
+## Important links:
 
 POST: http://localhost:8080/account/create
 
@@ -83,8 +76,9 @@ Response:
 ![image](https://user-images.githubusercontent.com/43113212/114313342-c8c57600-9b13-11eb-8f06-373f40c5e316.png)
 
 
+## Code Snippet:
 
-Code Snippet:
+![image](https://user-images.githubusercontent.com/43113212/114314174-3a52f380-9b17-11eb-8929-2a5200001ebc.png)
 
 ![image](https://user-images.githubusercontent.com/43113212/114313794-a46a9900-9b15-11eb-85eb-0d5daeaaf425.png)
 
@@ -95,8 +89,6 @@ Code Snippet:
 ![image](https://user-images.githubusercontent.com/43113212/114313911-2bb80c80-9b16-11eb-8b5c-726f96618df3.png)
 
 ![image](https://user-images.githubusercontent.com/43113212/114313930-3d011900-9b16-11eb-958a-3ba18398228a.png)
-
-
 
 ## Authors
 
