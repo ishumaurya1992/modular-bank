@@ -22,6 +22,9 @@ What things you need to install the software and how to install them
 SQL Script :
 
 ```
+CREATE SEQUENCE id_sequence
+  start 1000
+  increment 1;
 
 CREATE TABLE account (
    id integer primary key  default  nextval('id_sequence'::regclass),
@@ -80,6 +83,16 @@ Response:
 ![image](https://user-images.githubusercontent.com/43113212/114313342-c8c57600-9b13-11eb-8f06-373f40c5e316.png)
 
 
+
+Code Snippet:
+
+![image](https://user-images.githubusercontent.com/43113212/114313794-a46a9900-9b15-11eb-85eb-0d5daeaaf425.png)
+
+![image](https://user-images.githubusercontent.com/43113212/114313824-c95f0c00-9b15-11eb-8bc8-e70f734a81f9.png)
+
+![image](https://user-images.githubusercontent.com/43113212/114313911-2bb80c80-9b16-11eb-8b5c-726f96618df3.png)
+
+![image](https://user-images.githubusercontent.com/43113212/114313930-3d011900-9b16-11eb-958a-3ba18398228a.png)
 
 
 
