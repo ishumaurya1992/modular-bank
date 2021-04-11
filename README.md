@@ -19,7 +19,7 @@ What things you need to install the software and how to install them
 
 
 ```
-Sql Script :
+SQL Script :
 
 ```
 
@@ -64,14 +64,20 @@ Important links:
 
 POST: http://localhost:8080/account/create
 
+![image](https://user-images.githubusercontent.com/43113212/114313246-65d3df00-9b13-11eb-8601-eb149cdd24ec.png)
+
 GET: http://localhost:8080/account/{accountId}
 
+![image](https://user-images.githubusercontent.com/43113212/114313280-9451ba00-9b13-11eb-9e01-b694179b4e28.png)
 
-       
 
 POST: http://localhost:8080/account/transaction
 
-        
+Request:        
+![image](https://user-images.githubusercontent.com/43113212/114313313-b51a0f80-9b13-11eb-9a2d-bca32b902107.png)
+
+Response:
+![image](https://user-images.githubusercontent.com/43113212/114313342-c8c57600-9b13-11eb-8f06-373f40c5e316.png)
 
 
 
