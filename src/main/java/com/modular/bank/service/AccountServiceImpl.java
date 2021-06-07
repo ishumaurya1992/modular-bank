@@ -44,12 +44,17 @@ public class AccountServiceImpl implements AccountService  {
 		acc.setCountry(SupportedCountry.contains(Integer.parseInt(account.getCountry())));
 		acc.setCurrency(SupportedCurrency.contains(Integer.parseInt(account.getCurrency())));
 		acc.setCustomerId(Utility.getCustomerId()+"-"+SupportedCountry.contains(Integer.parseInt(account.getCountry())));
+
 		accountMapper.createAccount(acc);
 		
 		AccountResponse response = getAccount(acc.getAccountNumber());
 		sender.send(acc);
 		return response;
 	}
+
+
+
+
 
 	@Override
 	@Transactional(isolation = Isolation.READ_COMMITTED, readOnly = true)

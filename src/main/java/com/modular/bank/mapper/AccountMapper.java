@@ -13,6 +13,7 @@ import org.apache.ibatis.annotations.Update;
 
 import com.modular.bank.entity.AccountDao;
 
+
 @Mapper
 public interface AccountMapper {
 	 @Insert("INSERT INTO account (accountNumber, customerId, balance, currency, country) VALUES ( #{accountNumber}, #{customerId}, #{balance}, #{currency}, #{country}) ")
